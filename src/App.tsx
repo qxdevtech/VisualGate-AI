@@ -238,24 +238,24 @@ export default function App() {
     return (
       <div className="flex flex-col h-screen bg-[#0A0C10] text-[#F0F6FC] font-sans overflow-hidden">
         <header className="h-16 border-b border-[#2D333B] px-6 flex justify-between items-center bg-[#15181E] shrink-0">
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-4 md:gap-6">
             <div className="flex items-center gap-3">
-              <div className="bg-[#3B82F6] w-8 h-8 rounded-md flex items-center justify-center font-bold text-white">AI</div>
-              <span className="font-semibold tracking-tight uppercase">Core Access Control</span>
+              <div className="bg-[#3B82F6] w-8 h-8 rounded-md flex items-center justify-center font-bold text-white shrink-0">AI</div>
+              <span className="font-semibold tracking-tight uppercase hidden sm:block whitespace-nowrap">Core Access Control</span>
             </div>
             
-            <div className="hidden md:flex border border-[#2D333B] bg-[#0A0C10] rounded-lg p-1">
+            <div className="flex border border-[#2D333B] bg-[#0A0C10] rounded-lg p-1 shrink-0">
               <button
                 onClick={() => setView('chat')}
-                className={`px-4 py-1.5 rounded-md text-sm font-medium transition-all ${view === 'chat' ? 'bg-[#3B82F6] text-white shadow-sm' : 'text-[#8B949E] hover:text-[#F0F6FC]'}`}
+                className={`px-2 sm:px-4 py-1.5 rounded-md text-xs sm:text-sm font-medium transition-all ${view === 'chat' ? 'bg-[#3B82F6] text-white shadow-sm' : 'text-[#8B949E] hover:text-[#F0F6FC]'}`}
               >
-                <div className="flex items-center gap-2"><MessageSquare className="w-4 h-4" /> Assistant</div>
+                <div className="flex items-center gap-1 sm:gap-2"><MessageSquare className="w-3 h-3 sm:w-4 h-4" /> <span>Assistant</span></div>
               </button>
               <button
                 onClick={() => setView('trainer')}
-                className={`px-4 py-1.5 rounded-md text-sm font-medium transition-all ${view === 'trainer' ? 'bg-[#3B82F6] text-white shadow-sm' : 'text-[#8B949E] hover:text-[#F0F6FC]'}`}
+                className={`px-2 sm:px-4 py-1.5 rounded-md text-xs sm:text-sm font-medium transition-all ${view === 'trainer' ? 'bg-[#3B82F6] text-white shadow-sm' : 'text-[#8B949E] hover:text-[#F0F6FC]'}`}
               >
-                 <div className="flex items-center gap-2"><BrainCircuit className="w-4 h-4" /> Vision Lab</div>
+                 <div className="flex items-center gap-1 sm:gap-2"><BrainCircuit className="w-3 h-3 sm:w-4 h-4" /> <span>Vision Lab</span></div>
               </button>
             </div>
           </div>
