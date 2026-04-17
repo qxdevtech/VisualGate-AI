@@ -1,0 +1,8 @@
+{
+  "name": "Core Access Control",
+  "description": "Secure biometric identity portal with local AI processing and voice assistant.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
