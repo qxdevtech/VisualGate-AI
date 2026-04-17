@@ -166,7 +166,7 @@ export default function VisionTrainer() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
           {/* Training Section */}
-          <div className="flex flex-col gap-6 border-r border-[#2D333B] pr-8">
+          <div className="flex flex-col gap-6 md:border-r border-[#2D333B] md:pr-8">
             <h3 className="text-lg font-semibold text-[#F0F6FC] border-b border-[#2D333B] pb-2">1. Define Classes & Gather Data</h3>
             
             <form onSubmit={addGroup} className="flex gap-2">
